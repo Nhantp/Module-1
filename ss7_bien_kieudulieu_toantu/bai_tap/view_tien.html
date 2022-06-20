@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .tx{
+        margin-right: 150px;
+        margin-left: 35px;
+    }
+    .txx{
+        margin-right: 50px;
+    }
+    .txp{
+        margin-right: 50px;
+        background-color: darkslateblue;
+        color: white;
+    }
+
+</style>
+<table>
+    <form>
+        <tr>
+            <th><p class="tx"><b>Amount</b></p></th>
+            <th><p class="txx"><b>To currency</b></p></th>
+            <th><p><b>To currency</b></p></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="mn"><br></td>
+            <td><select id="a">
+                <option value="0">VietNam</option>
+                <option value="1">USD</option>
+            </select></td>
+            <td><select id="b">
+                <option value="1">USD</option>
+                <option value="0">VietNam</option>
+            </select></td>
+            <td>
+                <button class="txp" type="button" onclick="money()"><b>Convert</b></button>
+                <p id="result"></p>
+                <script>
+                    function money() {
+                      let s= parseFloat(document.getElementById('mn').value);
+                      let a = document.getElementById("a").value;
+                      let b = document.getElementById("b").value;
+                      if (a==b){
+                          document.getElementById("result").innerText = s;
+                      }else {
+                          if (a==0){
+                              document.getElementById("result").innerText = s*0.000043;
+                          }else {
+                              document.getElementById("result").innerText = s*23250;
+                          }
+                      }
+                    }
+                </script>
+            </td>
+        </tr>
+    </form>
+</table>
+<script src="cdoi_tien.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+let ly;
+let hoa;
+let sinh;
+ly=prompt("Nhap vao diem ly:");
+hoa=prompt("Nhap vao diem hoa:");
+sinh=prompt("Nhap vao diem sinh:");
+let diemly= parseInt(ly);
+let diemhoa= parseInt(hoa);
+let diemsinh= parseInt(sinh);
+let GPA= (diemly+diemhoa+diemsinh)/3;
+document.write("GPA="+GPA);

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('MENU \n 1:Tinh do F \n 2:Tinh feet \n 3:Tinh dien tich hinh vuong \n 4:Tinh dien tinh hinh chu nhat \n ' +
+        '5:Tinh dien tich hinh vuong \n 6.Giai pt bac 1 \n 7.Giai pt bac 2 \n 8.Kiem tra so tuoi \n ' +
+        '9.Kiem tra 3 canh cua tam giac \n 10.Tinh gia dien \n 11.Tinh thue thu nhap ca nhan \n 12.Tinh lai ngan hang\n Nhan OK de tiep tuc')
+    let menu = parseInt(prompt("Nhap vao tuy chon:"))
+    switch (menu) {
+        // Bai 1
+        case 1:
+            let doc = parseFloat(prompt('Nhap vao do C:'));
+            let dof = doc * 9 / 5 + 32;
+            alert(dof);
+            break;
+
+        //    Bai 2
+        case 2:
+            let m = parseFloat(prompt('Nhap vao met: '));
+            let fm = m * 3.2808;
+            alert(fm);
+            break;
+
+        //    Bai 3
+        case 3:
+            let e = parseFloat(prompt('Nhap vao canh hinh vuong:'));
+            let f = e * e;
+            alert(f);
+            break;
+
+        //    Bai 4
+        case 4:
+            let a = parseFloat(prompt('Nhap vao chieu rong:'));
+            let b = parseFloat(prompt('Nhap vao chieu dai'));
+            let c = (a + b) * 2;
+            alert(c);
+            break;
+
+        // Bai 5
+        case 5:
+            let t = parseFloat(prompt('Nhap vao canh goc vuong 1:'));
+            let g = parseFloat(prompt('Nhap vao canh goc vuong 2:'));
+            let tg = 1 / 2 * t * g;
+            alert(tg);
+            break;
+            //Bai 6
+        case 6:
+            let d = parseFloat(prompt('Nhap vao ax:'));
+            let r = parseFloat(prompt('Nhap vao b:'));
+            let o = -d / r;
+            alert(o);
+            break;
+        //    Bai 7
+        case 7:
+            let q=parseFloat(prompt('Nhap vao ax^2:'));
+            let p=parseFloat(prompt('Nhap vao bx:'));
+            let n=parseFloat(prompt('Nhap vao c:'));
+            if(q==0&&p==0) {
+                if (n == 0) {
+                    alert('Phuong trinh vo so nghiem.');
+                } else {
+                    alert('Phuong trinh vo nghiem.');
+                }
+            }
+            if(q==0){
+                let l=-n/p;
+                alert(l);
+            }else{
+                let d=p*p-4*q*n;
+                if(d<0){
+                    alert('Phuong trinh vo nghiem.')
+                }else if(d==0){
+                    let x=-p/2*q;
+                    alert(x);
+                }else{
+                    let x=(-p+Math.sqrt(d))/2*q;
+                    let m=(-p-Math.sqrt(d))/2*q;
+                    alert(x);
+                    alert(m);
+                }
+            }
+            break;
+    //        Bai 8
+            case 8:
+                let age=parseInt(prompt('Nhap vao so tuoi:'));
+                if(age>0&&age<120){
+                    alert('La so tuoi cua mot nguoi');
+                }
+                else{
+                    alert('Khong phai so tuoi mot nguoi.');
+                }
+                break;
+    //       Bai 9
+            case 9:
+                let c1=parseFloat(prompt('Nhap vao canh thu 1:'));
+                let c2=parseFloat(prompt('Nhap vao canh thu 2:'));
+                let c3=parseFloat(prompt('Nhap vao canh thu 3:'));
+                if(c1>0&&c2>0&&c3>0){
+                    if(c1+c2>c3){
+                        alert('La 3 canh cua tam giac.');
+                    }else if(c2+c3>c1){
+                        alert('La 3 canh cua tam giac.');
+                    }else if(c1+c3>c2){
+                        alert('La 3 canh cua tam giac.');
+                    }else{
+                        alert('Khong phai 3 canh cua tam giac.')
+                    }
+                }else{
+                    alert('Vui long nhap vao so thuc.');
+                }
+                break;
+
+    //       Bai 10
+            case 10:
+                let electric=parseFloat(prompt("Nhap vao so chu dien:"));
+                let sum=electric*3000;
+                alert(sum);
+                break;
+    //      Bai 11:
+            case 11:
+                let thue=parseFloat(prompt("Nhap vao thu nhap ca nhan:"));
+                if(thue>1000000){
+                    let thue1=thue*10/100;
+                    alert(thue1);
+                }else if(thue>500000&&thue<1000000){
+                    let thue2=thue*5/100;
+                    alert(thue2);
+                }else{
+                    let thue3=thue*1/100;
+                    alert(thue3);
+                }
+                break;
+    //       Bai 12
+            case 12:
+                let tbd=parseFloat(prompt('Nhap vao so tien ban dau:'));
+                let month=parseFloat(prompt('Nhap vao so thang can gui:'));
+                let lai= tbd*month*5/100;
+                alert(lai);
+    }
+</script>
+
+</body>
+</html>

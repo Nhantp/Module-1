@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <style>
+        .calculator{
+            padding: 10px;
+            border-radius: 1em;
+            height: 380px;
+            width: 400px;
+            margin: auto;
+        }
+        .display-box {
+            font-family: 'Orbitron', sans-serif;
+            border: solid black 0.5px;
+            color: black;
+            border-radius: 5px;
+            width: 100%;
+            height: 65%;
+        }
+            .display-key{
+                font-family: 'Orbitron', sans-serif;
+                background-color:
+                border: #dddddd ;
+                color: blue;
+                width: 24%;
+                height: 50%;
+            }
+
+    </style>
+    <table>
+        <tr><h1><center>Máy Tính Bỏ Túi Đơn Giản</center></h1></tr>
+    </table>
+    <table class="calculator">
+        <tr>
+            <td>
+                <input type="text" id="result" class="display-box" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="display-key" type="button" value="1" onclick="displayCal('1')">
+                <input class="display-key" type="button" value="2" onclick="displayCal('2')">
+                <input class="display-key" type="button" value="3" onclick="displayCal('3')">
+                <input class="display-key" type="button" value="+" onclick="displayCal('+')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="display-key" type="button" value="4" onclick="displayCal('4')">
+                <input class="display-key" type="button" value="5" onclick="displayCal('5')">
+                <input class="display-key" type="button" value="6" onclick="displayCal('6')">
+                <input class="display-key" type="button" value="-" onclick="displayCal('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="display-key" type="button" value="7" onclick="displayCal('7')">
+                <input class="display-key" type="button" value="8" onclick="displayCal('8')">
+                <input class="display-key" type="button" value="9" onclick="displayCal('9')">
+                <input class="display-key" type="button" value="x" onclick="displayCal('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="display-key" type="button" value="C" onclick="clearScreen()" id="btn">
+                <input class="display-key" type="button" value="0" onclick="displayCal('0')">
+                 <input class="display-key" type="button" value="=" onclick="calculate()">
+                <input class="display-key" type="button" value="/" onclick="displayCal('/')">
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="simple_calculate.js"></script>
+</form>
+</body>
+</html>

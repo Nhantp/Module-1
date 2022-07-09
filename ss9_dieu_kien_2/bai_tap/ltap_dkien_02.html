@@ -138,8 +138,9 @@
             case 12:
                 let tbd=parseFloat(prompt('Nhap vao so tien ban dau:'));
                 let month=parseFloat(prompt('Nhap vao so thang can gui:'));
-                let lai= tbd*month*5/100;
-                alert(lai);
+                let sumMoney;
+                sumMoney=tbd*Math.pow(1+0.05,month);
+                alert(sumMoney);
     }
 </script>
 

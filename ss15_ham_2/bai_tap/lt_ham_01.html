@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            // Bai1
+
+            // function alertMassage() {
+            //     alert("xin chao.");
+            // }
+            // alertMassage();
+
+        //    Bai2
+        //     function number(array) {
+        //         let first=array+1;
+        //         return first;
+        //     }
+        //     let input=parseInt(prompt("Nhap vao doi so:"));
+        //     let num=number(input);
+        //     document.write(num);
+
+        //    Bai3
+        //     function input() {
+        //         let nhap=parseInt(prompt("Nhap vao so thu nhat: "));
+        //         let nhap1=parseInt(prompt("Nhap vao so thu 2: "));
+        //         let sum=0;
+        //         if(nhap>nhap1){
+        //             alert("So thu nhat lon hon so thu hai.");
+        //         }else{
+        //             sum=nhap+nhap1;
+        //             alert("Tong 2 so: "+sum);
+        //         }
+        //     }
+        //     input();
+
+        //    Bai4
+        //     function addNumbers() {
+        //         firstNum = 4;
+        //         secondNum = 8;
+        //         result = firstNum + secondNum;
+        //         alert("Bien result truoc goi ham: "+result);
+        //         return result;
+        //     }
+        //     result = 0;
+        //     result = addNumbers();
+        //     alert("Bien result sau goi ham: " +result)
+
+        //    Bai5
+            function starSearch() {
+                let input=prompt("Nhap vao sao: ");
+                let star = [ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+                let contellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+                let tmp;
+                for (let i = 0; i < star.length; i++) {
+                    if (input===star[i]){
+                        tmp=i;
+                    }
+                    console.log(i);
+                }
+                let result;
+                for (let j=0; j<contellation.length;j++){
+                    if(tmp===j){
+                        console.log(j);
+                        result=contellation[j];
+                    }
+                }
+                document.write(result);
+            }
+            starSearch();
+
+        </script>
+</body>
+</html>

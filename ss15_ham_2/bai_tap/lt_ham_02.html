@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            // Bai1
+            // function binhPhuong() {
+            //     let binhphuong;
+            //     input=parseFloat(prompt("Nhap vao mot so:"));
+            //     binhphuong=Math.pow(input,2);
+            //     document.write("Binh phuong mot so la: "+binhphuong);
+            // }
+            // binhPhuong();
+
+            // Bai2
+            // function tinh() {
+            //     let bankinh=parseFloat(prompt("Nhap vao ban kinh:"))
+            //     let pi=3.14;
+            //     let dientich=Math.pow(bankinh,2)*pi;
+            //     document.write("Dien tich hinh tron: "+dientich+"<br>");
+            // }
+            // tinh();
+            // function tinh1() {
+            //     let bankinh=parseFloat(prompt("Nhap vao ban kinh:"))
+            //     let pi=3.14;
+            //     let chuvi=2*bankinh*pi;
+            //     document.write("Chu vi hinh tron: "+chuvi);
+            // }
+            // tinh1();
+
+            // Bai4
+            //     function kiemTra() {
+            //         let input=prompt("Vui long nhap vao:");
+            //         if(input>=0&&input<=9){
+            //             alert("True");
+            //         }else{
+            //             alert("False");
+            //         }
+            //     }
+            //     kiemTra();
+
+            // Bai5
+            // function nhapsonguyen() {
+            //     let input=parseInt(prompt("Nhap vai 3 so nguyen:"))
+            //     let str=input.toString();
+            //     let array=[str[0]];
+            //     let max=array[0];
+            //     for(let i=1; i<str.length; i++){
+            //         array.push(str[i]);
+            //     }
+            //     for (let j=0; j<array.length; j++){
+            //         if(array[j]>max){
+            //             max=array[j];
+            //         }
+            //     }
+            //     document.write("So lon nhat trong 3 so la:"+max.toString());
+            // }
+            // nhapsonguyen();
+
+            // Bai6
+            // function check() {
+            //     let input=parseInt(prompt("Nhap vao mot so:"));
+            //     if(input>=0){
+            //         alert("True");
+            //     }else {
+            //         alert("False");
+            //     }
+            // }
+            // check();
+
+            // Bai7
+            // function swap() {
+            //     let input1=parseInt(prompt("Nhap vao so thu nhat: "));
+            //     let input2=parseInt(prompt("Nhap vao so thu hai: "));
+            //     let tmp=input1;
+            //     input1=input2;
+            //     input2=tmp;
+            //     alert("So thu nhat"+input1);
+            //     alert("So thu hai"+input2);
+            // }
+            // swap();
+
+            // Bai8
+            // function swap() {
+            //     let input = parseInt(prompt("Nhap vao mang so nguyen: "));
+            //     let str = input.toString();
+            //     let array = [str[0]];
+            //     for (let i = 1; i < str.length; i++) {
+            //         array.push(str[i]);
+            //     }
+            //     document.writeln("Truoc khi doi cho: " + array+"<br>");
+            //     let tmp;
+            //     for (let i = 0; i < array.length / 2; i++) {
+            //         tmp = array[i];
+            //         array[i] = array[array.length - 1 - i];
+            //         array[array.length - 1 - i] = tmp;
+            //     }
+            //     document.writeln("Sau khi doi cho: " + array);
+            // }
+            //
+            // swap();
+
+            // Bai9
+            function check() {
+                let count=0;
+                let array = ['a', 'b', 'c', 'd', 'e', 'f','a'];
+                let input = prompt("Nhap vao mot ky tu");
+                for(let i=0; i<array.length; i++){
+                    if(input===array[i]){
+                        count++;
+                    }
+                }
+                alert("So lan xuat hien: "+count);
+            }
+            check();
+        </script>
+</body>
+</html>

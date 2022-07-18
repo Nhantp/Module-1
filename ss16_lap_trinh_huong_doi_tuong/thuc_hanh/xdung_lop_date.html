@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day.toString();
+        }
+
+        getMonth() {
+            return this.month.toString();
+        }
+
+        getYear() {
+            return this.year.toString();
+        }
+
+        setDay(new_day) {
+            this.day = new_day;
+        }
+
+        setMonth(new_month) {
+            this.month = new_month;
+        }
+
+        setYear(new_year) {
+            this.year = new_year;
+        }
+    }
+    let std1 = new Date(2, 2, 2022);
+    let day = std1.getDay();
+    let month = std1.getMonth();
+    let year = std1.getYear();
+    alert(day + "/" + month + "/" + year);
+    std1.setDay(10);
+    std1.setMonth(10);
+    std1.setYear(2022);
+    let day1 = std1.getDay();
+    let month1 = std1.getMonth();
+    let year1 = std1.getYear();
+    alert(day1 + "/" + month1 + "/" + year1);
+</script>
+</body>
+</html>

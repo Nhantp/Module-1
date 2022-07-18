@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        class Rectangle{
+            constructor(long,width)
+            {
+                this.long=long;
+                this.width = width;
+            }
+            getLong(){
+                return this.long;
+            }
+            getWidth(){
+                return this.width;
+            }
+            setLong(new_long){
+                this.long=new_long;
+            }
+            setWidth(new_wight){
+                this.width=new_wight;
+            }
+            area () {
+                let area1=this.long*this.width;
+                return area1;
+            }
+            perimeter() {
+                let perimeter1=(this.long+this.width)*2;
+                return perimeter1;
+            }
+        }
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        ctx.fillRect(0,0,200,100);
+        let rectangle=new Rectangle();
+        rectangle.setLong(200);
+        rectangle.setWidth(100);
+        rectangle.getLong();
+        rectangle.getWidth();
+        document.write("<br>"+"Dien tich: "+rectangle.area()+"<br>");
+        document.write("Chu vi: "+rectangle.perimeter());
+    </script>
+
+</body>
+</html>

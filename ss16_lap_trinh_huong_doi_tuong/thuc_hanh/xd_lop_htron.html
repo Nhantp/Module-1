@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Circle {
+            constructor(radius) {
+                this.radius=radius;
+            }
+            getRadius() {
+                return this.radius;
+            }
+            setRadius(new_radius){
+                this.radius=new_radius;
+            }
+            area () {
+                let s =Math.pow(this.radius,2)*3.14;
+                return s;
+            }
+        }
+        let circle= new Circle(2);
+        alert("Bankinh:"+circle.radius);
+        alert("Area: "+circle.area());
+    </script>
+</body>
+</html>

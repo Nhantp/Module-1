@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       class Temperature{
+           constructor(do_c,do_k,do_f) {
+               this.do_c=do_c;
+               this.do_f=do_f;
+               this.do_k=do_k;
+           }
+           get_do_c(){
+               return this.do_c;
+           }
+           get_do_f(){
+               return this.do_f;
+           }
+           get_do_k(){
+               return this.do_k;
+           }
+           tinh_do_f(){
+               this.do_f=this.do_c*1.8+32;
+               return this.do_f;
+           }
+           tinh_do_k(){
+               this.do_k=this.do_c+273;
+               return this.do_k;
+           }
+       }
+       let temperature=new Temperature(25);
+       document.write("c to f: "+temperature.tinh_do_f()+"<br>");
+       document.write("c to k: "+temperature.tinh_do_k());
+    </script>
+</body>
+</html>

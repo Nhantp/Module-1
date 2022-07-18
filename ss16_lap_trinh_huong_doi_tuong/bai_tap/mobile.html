@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="idtext">
+    <p id="result"></p>
+</form>
+    <script>
+        class Mobile{
+            constructor(tem_pin) {
+                this.tem_pin=tem_pin;
+            }
+            getpin(){
+                document.write("Pin: "+this.tem_pin+"<br>");
+                return this.tem_pin;
+            }
+            setpin(new_pin){
+                this.tem_pin=new_pin;
+            }
+            gettext(){
+                let text=document.getElementById("idtext").value;
+                document.getElementById("result").innerHTML=text;
+            }
+        }
+        let mobile=new Mobile();
+        mobile.setpin(10);
+        mobile.getpin();
+        mobile.gettext();
+    </script>
+</body>
+</html>

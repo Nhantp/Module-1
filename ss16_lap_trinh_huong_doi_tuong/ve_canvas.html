@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <canvas id="myCanvas" width="200" height="100"></canvas>-->
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3">
+    <script>
+        // Duongthang
+        // let c= document.getElementById("myCanvas");
+        // let ctx = c.getContext("2d");
+        // ctx.moveTo(0,0);
+        // ctx.lineTo(200,100);
+        // ctx.stroke();
+
+        // Duongtron
+        let dt=document.getElementById("myCanvas");
+        let ctt=dt.getContext("2d");
+        ctt.beginPath();
+        ctt.arc(95,50,40,0,2*Math.PI);
+    </script>
+</body>
+</html>
